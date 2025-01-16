@@ -1,0 +1,47 @@
+<div class="outerheader">
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a class="active" href="">Home</a></li>
+                <li class="dropdown">
+                    <a href="{% url 'aboutus' %}">Admission</a>
+                    <div class="dropdown-content">
+                        <a href="#">Undergraduate</a>
+                        <a href="#">Postgraduate</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Department</a>
+                    <div class="dropdown-content">
+                        <a href="#">Computer Science and Engineering</a>
+                        <a href="#">Electronics and Communication Engineering</a>
+                        <a href="#">Information Science and Engineering</a>
+                        <a href="#">Civil Engineering</a>
+                        <a href="#">CSE in Data Science</a>
+                        <a href="#">CSE in Cyber Security</a>
+                        <a href="#">CSE in Artificial Intelligence</a>
+                        <a href="#">Mechanical Engineering</a>
+                    </div>
+                </li>
+                <li><a href="#" onclick="toggleContact()">Contact Us</a></li>
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div id="contactInfo" style="display: none;">
+    <p>Email: example@example.com</p>
+    <p>Phone: 123-456-7890</p>
+</div>
+
+<script>
+    function toggleContact() {
+        var contactDiv = document.getElementById("contactInfo");
+        if (contactDiv.style.display === "none") {
+            contactDiv.style.display = "block";
+        } else {
+            contactDiv.style.display = "none";
+        }
+    }
+</script>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receiver</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/dashs.css' %}">
+</head>
+<body>
+
+    <div class="ambulance-container">
+        <div class="ambulance"></div>
+      </div>
+  <div class="container">
+    <form action="" class="search"  method="get">
+        <input type="text" placeholder="Search for Books " name="searchname">
+        <button type="submit"> <img src="{% static 'css/Search-PNG.png' %}" alt=""></button>
+    </form>
+</div>
+     <table class="content-table">
+        <thead>
+          <tr>
+            <th>Sno</th>
+            <th>Book Name</th>
+            <th>SEM / YEAR</th>
+            <th>Download Book</th>
+          </tr>
+        </thead>
+        {% for d in dash1 %}
+        <tbody>
+          <tr>
+            <th>{{forloop.counter}}</th>
+            <td>{{d.bookname}}</td>
+            <td>{{d.sem_year}}</td>
+            <td>
+              {% if d.link %}
+                <a href="{{ d.link }}" target="_blank">
+                <button id="bt">Download Pdf</button></a>
+              {% else %}
+                No Appointments Available
+              {% endif %}
+            </td>
+          </tr>
+          {% empty %}
+          NO Data Found
+          {% endfor %}
+        </tbody>
+      </table>
+</body>
+</html>

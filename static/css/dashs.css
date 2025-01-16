@@ -1,0 +1,269 @@
+* {
+    /* Change your font family */
+    font-family: sans-serif;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+
+}
+Body h1{
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+    /* width: 100%; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    /* background-color: aliceblue; */
+}
+
+.header{
+    margin-top: -40Px;
+    /* width: 100%; */
+    height: 40px;
+    padding-top: 5px;
+}
+.outerheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8f7ff;
+    padding-top: 20px;
+    padding-bottom: -20px;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.i{
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: -30px;
+    width: 60px;
+    height: 60px;
+    /* background-color: #d62727; */
+    align-items: center;
+    background-image: url(icon.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    margin: 0px;
+    padding: 0px;
+    height: 680px;
+    background-image: url(Hospital.jpg);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    background-color: #c8f7ff;
+    margin: 0px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    color: #ffffff;
+}
+
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: #555555;
+    font-size: 20px;
+}
+
+/* nav a:hover {
+    color: rgb(0, 179, 255);
+    font-size: 25px;
+    transition: 0.5s;
+} */
+.header  ul li a.active,
+.header  ul li a:hover{
+    padding: 5px;
+	background: rgba(0, 229, 255, 0.574);
+    color: #fff;
+
+	border-radius: 2px;
+    font-size: 20px;
+    transition: ease-out 0.5s;
+}
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+    height: 50px;
+    /* width: 200px; */
+    border: solid #009879 2px;
+}
+thead{
+    text-transform: uppercase;
+    border: solid #ccfff5 2px;
+
+}
+tbody{
+    height: 100px;
+}
+#area{
+    width: 250px;
+
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #1b1d1d;
+}
+.container
+{
+    width: 100%;
+    /* min-height: 100vh; */
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(15, 15, 15, 0.2);
+    display: flex;
+    align-items: center;
+    /* border-radius: 60px; */
+    /* padding: 10px 20px; */
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color:#009879;
+}
+::placeholder{
+    color:#009879;
+}
+
+.search button img{
+    width: 25px;
+}
+
+.search button{
+    border: 0;
+    /* border-radius: 50%; */
+    width: 80px;
+    height: 80px;
+    background:#009879;
+    cursor: pointer;
+}
+
+.ambulance-container {
+    position: absolute;
+    top: 35%;
+    left: -200px;
+    width: 200px;
+    height: 100px;
+    animation: moveAmbulance 6s linear infinite;
+}
+
+.ambulance {
+    width: 100%;
+    height: 100%;
+    /* background-color: #f00; */
+    background-image: url(am1.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
+}
+
+
+/* @keyframes moveAmbulance {
+    0% {
+        transform: translateX(730%);
+    }
+    100% {
+        transform: translateX(330%);
+    }
+} */
+@keyframes moveAmbulance {
+    0% {
+        transform: translateX(70%);
+    }
+    100% {
+        transform: translateX(1000%);
+    }
+}
+#bt {
+    align-self: center;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-left: 25px;
+    font-weight: 500;
+    /* background-color: #43b4ff; */
+    color: #383838;
+    font-size: 20px;
+    padding: 10px;
+    border: solid #555555 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#bt:hover{
+    background-color: #0099ff;
+    border: solid #ffffff 2px;
+    color: #fff;
+    transition: ease-in-out 0.5s;
+    /* background-color: #dcdcdc8f; */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: ease-in-out 0.5s;
+}

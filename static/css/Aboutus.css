@@ -1,0 +1,699 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.content{
+    margin: 0px;
+    padding: 0px;
+    /* padding-top: 50px; */
+    /* height: 80vh; */
+    /* background-image: url(SVCE-1.jpg); */
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.outerheader{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading1{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading1 h1{
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: #101010;
+}
+.heading1 h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading1 img{
+    margin-left: 10px;
+    width: 180px;
+    height: 90px;
+    display: inline-block;
+}
+.innerheader1{
+    width: 1000px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* padding-left: 10px; */
+}
+/* library image */
+.library {
+    float: right;
+    margin: 10px 10px 10px 0px; /* Adjust as needed */
+    padding: 10px;
+    /* background-color: #ee0d0d; */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    /* Add any other styles you need for the library div */
+    background-image: url(E-Resources.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* library image */
+
+.innerheader2{
+    margin: 0px;
+    padding: 0px;
+    background-color: #c1eeff;
+    width: 1000px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.updates{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    background-color: #5dd4ff;
+    width: 210px;
+    padding: 10px;
+    /* height: 50px; */
+    font-size: 20px;
+}
+marquee{
+    height: 40px;
+    margin-top: -10px;
+    range: infinite;
+}
+.updatescontent h2{
+    padding-left: 20px;
+}
+/* .outerheader{
+    background-color: #ffd900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.header{
+    width: 100%;
+    height: 90px;
+    padding-top: 5px;  
+    /* background-image: url(HEADER\ BG.jpeg); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(HEADER\ BG.jpeg);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(HEADER\ BG.jpeg);
+    transition: 0.5s ease-in-out;
+}
+nav {
+    /* background-color: #1f2329; */
+    margin: 0px;
+    width: 100%;
+    color: #101010;
+    text-align: center;
+    /* padding: 10px; */
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    color: #101010;
+}
+nav a {
+    text-transform: uppercase;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px #535353;
+    border: solid 2px #ff6a00;
+    transition: ease-in-out 0.8s;
+    border-radius: 0px 0px;
+    margin-top: -20px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #2aaaff;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #2aaaff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    .heading1 h1 {
+        font-size: 30px;
+    }
+    .innerheader1 {
+        width: 400px;
+    }
+    .innerheader2 {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .heading1 h1 {
+        font-size: 25px;
+    }
+    .innerheader1 {
+        width: 300px;
+    }
+    .innerheader2 {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading1 h1 {
+        font-size: 20px;
+    }
+    .innerheader1 {
+        width: 200px;
+    }
+    .innerheader2 {
+        width: 400px;
+    }
+    /* Add more styles for smaller screens */
+}
+
+
+
+
+
+/* Header ended */
+
+
+
+
+.poster-about{
+    width: 100%;
+    height: 500px;
+    background-image: url(SVCE-1.jpg);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper {
+    text-align: justify;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.wrapper p:hover  {
+    color: #000000; /* Change color on hover */
+}
+
+
+
+/* Content Styles */
+.content {
+    margin: 20px;
+}
+.content p{
+    font-size: 25px; /* Set font size for all paragraphs */
+    text-align: justify;
+    transition: color 0.3s; /* Add transition for color change */
+}
+h1{
+    text-align: center;
+}
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+.about-section {
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+.about-section-m {
+    margin-bottom: 20px;
+}
+
+.about-section-m h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Animation */
+.about-section:hover p {
+    color: #000000; /* Change color on hover */
+}
+
+.vision-mission-section {
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vision-mission-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.vision-mission-section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.vision-mission-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+/* about started  */
+.outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 120px;
+    width: 400px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+.section:hover {
+    background-color: #ffffff;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    margin: 10px 0 0;
+    padding: 0;
+    color: #666;
+}
+/* about ended */
+
+.outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-section {
+    height: 150px;
+    width: 400px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+.about-section:hover{
+    background-color: #ffffff;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+.about-section-m h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    padding: 25px;
+}
+
+p {
+    margin: 10px 0 0;
+    padding: 0;
+    color: #666;
+}
+
+.vision-mission-section {
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vision-mission-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.vision-mission-section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.vision-mission-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.management-poster{
+    width: 100%;
+    height: 600px;
+    background-image: url(MAnagement.png);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+
+
+
+/* Footer Starts */
+.footer{
+    color: #fff;
+    width: 100%;
+    height: 500px;
+    background-color: #101010;
+}
+footer {
+    background-color: #101010; /* Grey color background */
+    padding: 20px 0; /* Add padding around the content */
+}
+footer-enquiry p{
+    color: #fff;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.footer-logo {
+    height: 100px;
+    text-align: center; /* Center align the content */
+    margin-bottom: 20px; /* Add space below the section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 70px 30px 70px;
+}
+
+.footer-logo img {
+    max-width: 200px; /* Limit the logo size */
+}
+.footer-logo p {
+    color: #818181;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 20px;
+}
+.footer-links {
+    color: #fff;
+    text-align: center; /* Center align the content */
+    margin-bottom: 20px; /* Add space below the section */
+}
+.footer-links h4{
+    font-size: 25px;
+    margin: 2px;
+}
+.footer-links ul {
+    color: #ffffffac;
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+.footer-links ul li {
+    color: #c0c0c0;
+    display: inline-block; /* Display links horizontally */
+    margin-right: 20px; /* Add space between links */
+}
+.footer-links ul li a{
+    font-size: 15px;
+    color: #c1c1c1;
+    text-decoration: none;
+}
+.footer-links ul li a:hover{
+    font-size: 15px;
+    color: #2aaaff;
+    transition: ease-in-out 0.5s;
+    border-bottom: solid 2px #2aaaff;
+}
+.footer-outerenquiry{
+    color: #fff;
+    margin: 0px 20px 0px 20px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-outerenquiry p{
+    text-align: center;
+    font-size: 15px;
+}
+.footer-enquiry,
+.footer-examination {
+    color: #fff;
+    text-align: left; /* Center align the content */
+    margin-bottom: 20px; /* Add space below the section */
+    width: 300px;
+    height: 90px;
+    background-color: #343434;
+    padding: 20px;
+}
+.footer-enquiry:hover,
+.footer-examination:hover {
+border: solid 1px #2aaaff;
+background-color: #101010;
+
+}
+.footer-enquiry h4,
+.footer-examination h4 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+}
+
+.footer-follow-us {
+    text-align: center; /* Center align the content */
+}
+.footer-follow-us h4{
+    font-size: 25px;
+    margin: 2px;
+}
+.footer-follow-us ul {
+    padding: 2px;
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+.footer-follow-us ul li {
+    padding: 2px;
+    color: #818181;
+    display: inline-block; /* Display links horizontally */
+    margin-right: 10px; /* Add space between links */
+}
+.footer-follow-us ul li a{
+    color: #818181;
+    padding: 2px;
+    display: inline-block; /* Display links horizontally */
+    margin-right: 10px; /* Add space between links */
+    text-decoration: none;
+}
+.footer-follow-us ul li a:hover{
+    border: solid 1px #2aaaff;
+    padding: 2px;
+    border-radius: 2px;
+    color: #101010;
+    background-color: #ffffff;
+    
+}
+/* Footer Ends */
+
+
+
+
+
+
+/* Enqury Container */
+
+.outer-container {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding-right: 20px; /* Add some padding to create space between the container and the edge */
+}
+
+.container {
+    margin-right: -120px;
+    padding: 10px 20px;
+    background-color: rgb(255, 183, 0);
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* writing-mode: vertical-rl; Display text vertically from left to right */
+    text-align: center; /* Center text horizontally */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+.container p{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.container:hover {
+    margin-right: -20px;
+    background-color: rgb(255, 119, 0);
+    color: #fff;
+}
+
+
+/* Styles for the chatbot */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+}
+
+.chatbot-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbot-content {
+    padding: 10px;
+}
+
+.chatbot-input {
+    width: calc(100% - 20px);
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    margin: 5px 0;
+}
+
+.chatbot-send {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}

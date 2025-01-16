@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Login.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="heading1">
+        <img src="{% static 'css/logo.jpg' %}" alt="">
+        <h1> SVCE Bengaluru </h1>
+    </div>
+    <div class="main">
+    
+    <div class="container">
+        <h2>LOGIN</h2>
+        <form action="" method="POST">
+            <div class="innerdiv1">
+                {% csrf_token %}
+                <!-- <label for="username"><i class='fas fa-user-alt' style='font-size:20px'></i> &nbsp; Username:
+                </label> -->
+                    <input type="text" id="username" name="username" required placeholder="Username">
+            </div>
+            <div class="innerdiv1">
+                <!-- <label for="password"><i class='fas fa-lock' style='font-size:20px'></i> &nbsp; Password:
+                </label> -->
+                    <input type="password" id="password" name="password" required placeholder="Password">
+            </div>
+                <button type="submit">Login </button>
+                <p>Don't have an account? <a href="{% url 'register' %}">Register here</a>.</p>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>

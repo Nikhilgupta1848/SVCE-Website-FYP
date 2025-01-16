@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events SVCE, Bengaluru </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Events.css' %}">
+</head>
+<body>
+    <div class="outerheader">
+        <div class="heading1">
+            <div class="innerheader1">
+                <img src="{% static 'css/logo.jpg' %}" alt="">
+                <h1> SVCE Bengaluru </h1>
+            </div>
+        </div>
+        <a href="{% url 'dash1' %}">
+            <div class="library">
+                <!-- Library logo -->
+            </div>
+            </a>
+    </div>
+
+    <div class="outerheader">
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a class="active" href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'academics' %}">Academics</a></li>
+                    <li class="dropdown">
+                        <a href="">Department</a>
+                        <div class="dropdown-content">
+                            <a href="{% url 'cs' %}">Computer Science and Engineering</a>
+                            <a href="{% url 'ec' %}">Electronics and Communication Engineering</a>
+                            <a href="{% url 'is' %}">Information Science and Engineering</a>
+                            <a href="{% url 'civil' %}">Civil Engineering</a>
+                            <a href="{% url 'ds' %}">CSE in Data Science</a>
+                            <a href="{% url 'cyber' %}">CSE in Cyber Security</a>
+                            <a href="{% url 'ai' %}">CSE in Artificial Intelligence</a>
+                            <a href="{% url 'mech' %}">Mechanical Engineering</a>
+                        </div>
+                    </li>
+
+                    <!-- <li><a href="{% url 'academics' %}">Research</a></li> -->
+                    <li><a href="{% url 'placements' %}">Placements</a></li>
+                    <li class="dropdown">
+                        <a href="{% url 'academics' %}">Admission</a>
+                        <div class="dropdown-content">
+                            <a href="{% url 'academics' %}">Undergraduate</a>
+                            <a href="{% url 'academics' %}">Postgraduate</a>
+                        </div>
+                    </li>
+
+                    <li><a href="{% url 'events' %}">News & Events</a></li>
+                    <li class="dropdown">
+                        <a href="{% url 'contactus' %}">Contact Us</a>
+                        <div class="dropdown-content">
+                            <a href="mailto:enquiry@svcengg.edu.in">Email</a>
+                            <a href="tel:+919731226262">Phone No</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+ 
+    <h2>NEWS & EVENTS ANNOUNCEMENTS  </h2>
+                <div class="college-details">
+                    <div class="details_2">
+                            <h4>15th International Conference on  Engineering and Technology 2024</h4>
+                            <h4>15th International Conference on  Engineering and Technology 2024</h4>
+                            <h4>15th International Conference on  Engineering and Technology 2024</h4>
+                            <h4>15th International Conference on  Engineering and Technology 2024</h4>
+                            <h4>15th International Conference on  Engineering and Technology 2024</h4>
+                            <h4>15th International Conference on  Engineering and Technology 2024</h4>
+                            <h4>15th International Conference on  Engineering and Technology 2024</h4>
+                    </div>
+                </div>
+                    <a href="{% url 'contactus' %}">
+                        <div class="outer-container">
+                            <div class="container" id="fixedContainer">
+                                <p>Enquiry</p>
+                            </div>
+                        </div>
+                    </a>
+        
+        
+                <div class="footer">
+                    <section>
+                        <footer>
+                            <div class="footer-logo">
+                                <img src="{% static 'css/logo.jpg' %}" alt="SVCE Logo">
+                                <p>Sri Venkateshwara
+                                    College of Engineering
+                                    For over decade SVCE has provided peerless academic, administrative and pastoral support to students hoping to succeed and beyond. From academic aspirations to the simple day-to-day challenges of living, we understand the importance of every part of the student journey.</p>
+                            </div>
+                            <div class="footer-links">
+                                <h4>Quick Links</h4>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="{% url 'academics' %}">Admission</a></li>
+                                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                                    <li><a href="{% url 'academics' %}">Department</a></li>
+                                    <li><a href="{% url 'events' %}">News & Events</a></li>
+                                    <li><a href="{% url 'placements' %}">Placements</a></li>
+                                    <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+                
+                                </ul>
+                            </div>
+                        <div class="footer-outerenquiry">
+        
+                            <div class="footer-enquiry">
+                                <h4>Enquiry</h4>
+                                <p>Email: enquiry@svcengg.edu.in</p>
+                                <p>Phone: +919731226262, +919740202345</p>
+                            </div>
+                            <div class="footer-enquiry">
+                                <h4>Admissions</h4>
+                                <p>Email: admissions@svcengg.edu.in</p>
+                                <p>Phone: +91 9916775988</p>
+                            </div>
+                            <div class="footer-examination">
+                                <h4>Examination</h4>
+                                <p>Email: exams@svcengg.edu.in</p>
+                                <p>Phone: +91 9901335353</p>
+                            </div>
+                        </div>
+                            <div class="footer-follow-us">
+                                <h4>Follow Us On</h4>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/svcebangalore?mibextid=ZbWKwL">Facebook</a></li>
+                                    <li><a href="https://www.instagram.com/svce_bengaluru?igsh=MzRlODBiNWFlZA%3D%3D">Instagram</a></li>
+                                    <li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7104436355232907265?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7104436355232907265%29">LinkedIn</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                </ul>
+                            </div>
+                        </footer>
+                    </section>
+                </div>
+        
+    </div>
+</div>
+<div class="chatbot-container" id="chatbot-container">
+    <div class="chatbot-header">Chatbot</div>
+    <div class="chatbot-content" id="chatbot-content"></div>
+    <input type="text" class="chatbot-input" id="chatbot-input" placeholder="Type your message...">
+    <button class="chatbot-send" id="chatbot-send">Send</button>
+</div>
+
+<!-- Your existing scripts -->
+
+<script>
+    // JavaScript for the chatbot
+    const chatbotContainer = document.getElementById('chatbot-container');
+    const chatbotContent = document.getElementById('chatbot-content');
+    const chatbotInput = document.getElementById('chatbot-input');
+    const chatbotSend = document.getElementById('chatbot-send');
+
+    chatbotContainer.style.display = 'block'; // Show the chatbot initially (change to 'none' to hide by default)
+
+    chatbotContainer.addEventListener('click', function() {
+        // Toggle the chatbot visibility on click
+        if (chatbotContent.style.display === 'block') {
+            chatbotContent.style.display = 'none';
+        } else {
+            chatbotContent.style.display = 'block';
+        }
+    });
+
+    chatbotSend.addEventListener('click', function() {
+        // Handle sending messages to the chatbot here
+        const message = chatbotInput.value.trim();
+        if (message !== '') {
+            // Send message to the chatbot
+            chatbotContent.innerHTML += `<p>You: ${message}</p>`;
+            chatbotInput.value = ''; // Clear the input field
+            // Call your backend API or function to get the chatbot response
+            // For example, using fetch:
+            fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: `message=${encodeURIComponent(message)}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                chatbotContent.innerHTML += `<p>Chatbot: ${data.response}</p>`;
+            });
+        }
+    });
+</script>
+</body>
+</html>

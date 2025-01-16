@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Academics.css' %}">
+</head>
+<body>
+    <div class="outerheader">
+        <div class="heading1">
+            <div class="innerheader1">
+                <img src="{% static 'css/logo.jpg' %}" alt="">
+                <h1> SVCE Bengaluru </h1>
+            </div>
+        </div>
+        <a href="{% url 'dash1' %}">
+            <div class="library">
+                <!-- Library logo -->
+            </div>
+            </a>
+    </div>
+
+    <div class="outerheader">
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a class="active" href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'academics' %}">Academics</a></li>
+                    <li class="dropdown">
+                        <a href="">Department</a>
+                        <div class="dropdown-content">
+                            <a href="{% url 'cs' %}">Computer Science and Engineering</a>
+                            <a href="{% url 'ec' %}">Electronics and Communication Engineering</a>
+                            <a href="{% url 'is' %}">Information Science and Engineering</a>
+                            <a href="{% url 'civil' %}">Civil Engineering</a>
+                            <a href="{% url 'ds' %}">CSE in Data Science</a>
+                            <a href="{% url 'cyber' %}">CSE in Cyber Security</a>
+                            <a href="{% url 'ai' %}">CSE in Artificial Intelligence</a>
+                            <a href="{% url 'mech' %}">Mechanical Engineering</a>
+                        </div>
+                    </li>
+
+                    <!-- <li><a href="{% url 'academics' %}">Research</a></li> -->
+                    <li><a href="{% url 'placements' %}">Placements</a></li>
+                    <li class="dropdown">
+                        <a href="{% url 'academics' %}">Admission</a>
+                        <div class="dropdown-content">
+                            <a href="{% url 'academics' %}">Undergraduate</a>
+                            <a href="{% url 'academics' %}">Postgraduate</a>
+                        </div>
+                    </li>
+
+                    <li><a href="{% url 'events' %}">News & Events</a></li>
+                    <li class="dropdown">
+                        <a href="{% url 'contactus' %}">Contact Us</a>
+                        <div class="dropdown-content">
+                            <a href="mailto:enquiry@svcengg.edu.in">Email</a>
+                            <a href="tel:+919731226262">Phone No</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <main>
+
+        <section class="ug-section">
+            <h2>Undergraduate (UG)</h2>
+        </section>
+
+
+        <div class="ug-outersec">
+            <h2 > EXPLORE OUR PROGRAMMES </h2>
+            <div class="outer4courses">
+                <div class="outercourse">
+                    <a href="{% url 'cs' %}">
+                        <div class="c1">
+                            <div class="c1img1"></div>
+                            <h3> Computer Science and Engineering</h3>
+                        </div>
+                    </a>
+                    <a href="{% url 'ec' %}">
+
+                    <div class="c1">
+                        <div class="c1img2"></div>
+                        <h3>Electronics and Communication Engineering</h3>
+                    </div>
+                    
+                </a>
+                <a href="{% url 'is' %}">
+
+                    <div class="c1">
+                        <div class="c1img3"></div>
+                        <h3>Information Science and Enginering</h3>
+                    </div>
+                </a>                                 
+                <a href="{% url 'civil' %}">
+
+                    <div class="c1">
+                        <div class="c1img4"></div>
+                        <h3>Civil Engineering </h3>
+                    </div>
+                </a>
+                </div>
+            </div>
+            
+            <div class="outer4courses">
+                <div class="outercourse">
+                    <a href="{% url 'ds' %}">
+                        <div class="c1">
+                            <div class="c1img5"></div>
+                            <h3> CSE in Data Science</h3>
+                        </div>
+                    </a>
+                    <a href="{% url 'cyber' %}">
+
+                    <div class="c1">
+                        <div class="c1img6"></div>
+                        <h3>CSE in Cyber Security</h3>
+                    </div>
+                    
+                </a>
+                <a href="{% url 'ai' %}">
+
+                    <div class="c1">
+                        <div class="c1img7"></div>
+                        <h3>CSE in Artificial Intelligence</h3>
+                    </div>
+                </a>                                 
+                <a href="{% url 'mech' %}">
+
+                    <div class="c1">
+                        <div class="c1img8"></div>
+                        <h3>Mechanical Engineering </h3>
+                    </div>
+                </a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <section class="pg-section">
+            <h2>Postgraduate (PG)</h2>
+        </section>
+        <div class="pg-outersec">
+            <h2 > EXPLORE OUR PROGRAMMES </h2>
+            <div class="outer4courses">
+                <div class="outercourse">
+                    <a href="{% url 'cs' %}">
+                        <div class="c1">
+                            <div class="c1img1"></div>
+                            <h3> Computer Science and Engineering</h3>
+                        </div>
+                    </a>
+                    <a href="{% url 'ec' %}">
+
+                    <div class="c1">
+                        <div class="c1img2"></div>
+                        <h3>Electronics and Communication Engineering</h3>
+                    </div>
+                    
+                </a>
+                <a href="{% url 'is' %}">
+
+                    <div class="c1">
+                        <div class="c1img3"></div>
+                        <h3>Information Science and Enginering</h3>
+                    </div>
+                </a>                                 
+                <a href="{% url 'civil' %}">
+
+                    <div class="c1">
+                        <div class="c1img4"></div>
+                        <h3>Civil Engineering </h3>
+                    </div>
+                </a>
+                </div>
+            </div>
+            
+            <div class="outer4courses">
+                <div class="outercourse">
+                    <a href="{% url 'ds' %}">
+                        <div class="c1">
+                            <div class="c1img5"></div>
+                            <h3> CSE in Data Science</h3>
+                        </div>
+                    </a>
+                    <a href="{% url 'cyber' %}">
+
+                    <div class="c1">
+                        <div class="c1img6"></div>
+                        <h3>CSE in Cyber Security</h3>
+                    </div>
+                    
+                </a>
+                <a href="{% url 'ai' %}">
+
+                    <div class="c1">
+                        <div class="c1img7"></div>
+                        <h3>CSE in Artificial Intelligence</h3>
+                    </div>
+                </a>                                 
+                <a href="{% url 'mech' %}">
+
+                    <div class="c1">
+                        <div class="c1img8"></div>
+                        <h3>Mechanical Engineering </h3>
+                    </div>
+                </a>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <a href="">
+        <div class="outer-container">
+            <div class="container" id="fixedContainer">
+                <p>Enquiry</p>
+            </div>
+        </div>
+    </a>
+    
+        <div class="footer">
+            <section>
+                <footer>
+                    <div class="footer-logo">
+                        <img src="{% static 'css/logo.jpg' %}" alt="SVCE Logo">
+                        <p>Sri Venkateshwara
+                            College of Engineering
+                            For over decade SVCE has provided peerless academic, administrative and pastoral support to students hoping to succeed and beyond. From academic aspirations to the simple day-to-day challenges of living, we understand the importance of every part of the student journey.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'academics' %}">Admission</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'academics' %}">Department</a></li>
+                    <li><a href="{% url 'events' %}">News & Events</a></li>
+                    <li><a href="{% url 'placements' %}">Placements</a></li>
+                    <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+
+                        </ul>
+                    </div>
+                <div class="footer-outerenquiry">
+
+
+                    <div class="footer-enquiry">
+                        <h4>Enquiry</h4>
+                        <p>Email: enquiry@svcengg.edu.in</p>
+                        <p>Phone: +919731226262, +919740202345</p>
+                    </div>
+                    <div class="footer-enquiry">
+                        <h4>Admissions</h4>
+                        <p>Email: admissions@svcengg.edu.in</p>
+                        <p>Phone: +91 9916775988</p>
+                    </div>
+                    <div class="footer-examination">
+                        <h4>Examination</h4>
+                        <p>Email: exams@svcengg.edu.in</p>
+                        <p>Phone: +91 9901335353</p>
+                    </div>
+                </div>
+                    <div class="footer-follow-us">
+                        <h4>Follow Us On</h4>
+                        <ul>
+                            <li><a href="https://www.facebook.com/svcebangalore?mibextid=ZbWKwL">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/svce_bengaluru?igsh=MzRlODBiNWFlZA%3D%3D">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7104436355232907265?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7104436355232907265%29">LinkedIn</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </section>
+        </div>
+        
+    </div>
+</body>
+</html>

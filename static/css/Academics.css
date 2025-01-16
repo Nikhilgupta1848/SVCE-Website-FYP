@@ -1,0 +1,615 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.content{
+    margin: 0px;
+    padding: 0px;
+    /* padding-top: 50px; */
+    height: 80vh;
+    /* background-image: url(SVCE-1.jpg); */
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.outerheader{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading1{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading1 h1{
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: #101010;
+}
+.heading1 h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading1 img{
+    margin-left: 10px;
+    width: 180px;
+    height: 90px;
+    display: inline-block;
+}
+.innerheader1{
+    width: 1000px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* padding-left: 10px; */
+}
+/* library image */
+.library {
+    float: right;
+    margin: 10px 10px 10px 0px; /* Adjust as needed */
+    padding: 10px;
+    /* background-color: #ee0d0d; */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    /* Add any other styles you need for the library div */
+    background-image: url(E-Resources.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* library image */
+
+.innerheader2{
+    margin: 0px;
+    padding: 0px;
+    background-color: #c1eeff;
+    width: 1000px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.updates{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    background-color: #5dd4ff;
+    width: 210px;
+    padding: 10px;
+    /* height: 50px; */
+    font-size: 20px;
+}
+marquee{
+    height: 40px;
+    margin-top: -10px;
+    range: infinite;
+}
+.updatescontent h2{
+    padding-left: 20px;
+}
+/* .outerheader{
+    background-color: #ffd900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.header{
+    width: 100%;
+    height: 90px;
+    padding-top: 5px;  
+    /* background-image: url(HEADER\ BG.jpeg); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(HEADER\ BG.jpeg);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(HEADER\ BG.jpeg);
+    transition: 0.5s ease-in-out;
+}
+nav {
+    /* background-color: #1f2329; */
+    margin: 0px;
+    width: 100%;
+    color: #101010;
+    text-align: center;
+    /* padding: 10px; */
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    color: #101010;
+}
+nav a {
+    text-transform: uppercase;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px #535353;
+    border: solid 2px #ff6a00;
+    transition: ease-in-out 0.8s;
+    border-radius: 0px 0px;
+    margin-top: -20px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #2aaaff;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #2aaaff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    .heading1 h1 {
+        font-size: 30px;
+    }
+    .innerheader1 {
+        width: 400px;
+    }
+    .innerheader2 {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .heading1 h1 {
+        font-size: 25px;
+    }
+    .innerheader1 {
+        width: 300px;
+    }
+    .innerheader2 {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading1 h1 {
+        font-size: 20px;
+    }
+    .innerheader1 {
+        width: 200px;
+    }
+    .innerheader2 {
+        width: 400px;
+    }
+    /* Add more styles for smaller screens */
+}
+
+
+
+
+
+/* Header ended */
+
+.wrapper {
+    padding: 30px;
+    background-image: url('Gangotri banner1.jpg');
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Services1 {
+    margin: 30px;
+    padding-top: 50px;
+    width: 1100px;
+    padding: 20px;
+    margin-left: 100px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(224, 255, 255, 0.8); /* Updated background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+.ug-section{
+    padding: 50px;
+}
+h2 {
+    padding: 10px;
+    font-size: 30px;
+    color: #2d2d2d; /* Adjusted text color */
+    display: inline;
+}
+
+p {
+    font-size: 32px; /* Increased font size */
+    align-items: center;
+    text-align: justify;
+}
+
+.Services1 p {
+    font-size: 28px;
+}
+
+
+
+
+.college-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.details_1{
+    width: 700px;
+    height: 100%;
+}
+.details_2{
+    background-color: #dfdfdf;
+    width: 600px;
+    height: 700px;
+}
+.details_2 h4{
+    text-align: center;
+    font-size: 15px;
+}
+.ug-outersec{
+    padding-left: 50px;
+}
+.outer4courses {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    height: 400px; 
+}
+.outercourse {
+    width: 100%;
+    height: 300px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    /* flex-wrap: wrap;  */
+}
+.c1 {
+    width: 300px; 
+    height: 300px;
+    margin: 10px; 
+    background-color: #ff8400; 
+    margin-bottom: 20px;
+}
+.c1img1{
+    width: 300px; 
+    height: 300px;
+    background-image: url(CS.jpg);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c1img2{
+    width: 300px; 
+    height: 300px;
+    background-image: url(EC.jpg);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c1img3{
+    width: 300px; 
+    height: 300px;
+    background-image: url(IS.jpg);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c1img4{
+    width: 300px; 
+    height: 300px;
+    background-image: url(Civil.jpg);
+    background-position: right;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c1img5{
+    width: 300px; 
+    height: 300px;
+    background-image: url(cse_ds.jpg);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c1img6{
+    width: 300px; 
+    height: 300px;
+    background-image: url(Cyber\ Security.jpeg);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c1img7{
+    width: 300px; 
+    height: 300px;
+    background-image: url(AIML.jpeg);
+    background-position: center;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c1img8{
+    width: 300px; 
+    height: 300px;
+    background-image: url(Mechanical.jpg);
+    background-position: start;
+    opacity: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.c1 h3{
+    text-align: center;
+}
+.pg-section{
+    padding: 50px;
+
+}
+.pg-outersec{
+    padding-left: 50px;
+}
+
+
+
+/* Footer Starts */
+.footer{
+    color: #fff;
+    width: 100%;
+    height: 500px;
+    background-color: #101010;
+}
+footer {
+    background-color: #101010; /* Grey color background */
+    padding: 20px 0; /* Add padding around the content */
+}
+footer-enquiry p{
+    color: #fff;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.footer-logo {
+    height: 100px;
+    text-align: center; /* Center align the content */
+    margin-bottom: 20px; /* Add space below the section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 70px 30px 70px;
+}
+
+.footer-logo img {
+    max-width: 200px; /* Limit the logo size */
+}
+.footer-logo p {
+    color: #818181;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 20px;
+}
+.footer-links {
+    color: #fff;
+    text-align: center; /* Center align the content */
+    margin-bottom: 20px; /* Add space below the section */
+}
+.footer-links h4{
+    font-size: 25px;
+    margin: 2px;
+}
+.footer-links ul {
+    color: #ffffffac;
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+.footer-links ul li {
+    color: #c0c0c0;
+    display: inline-block; /* Display links horizontally */
+    margin-right: 20px; /* Add space between links */
+}
+.footer-links ul li a{
+    font-size: 15px;
+    color: #c1c1c1;
+    text-decoration: none;
+}
+.footer-links ul li a:hover{
+    font-size: 15px;
+    color: #2aaaff;
+    transition: ease-in-out 0.5s;
+    border-bottom: solid 2px #2aaaff;
+}
+.footer-outerenquiry{
+    color: #fff;
+    margin: 0px 20px 0px 20px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-outerenquiry p{
+    text-align: center;
+    font-size: 15px;
+}
+.footer-enquiry,
+.footer-examination {
+    color: #fff;
+    text-align: left; /* Center align the content */
+    margin-bottom: 20px; /* Add space below the section */
+    width: 300px;
+    height: 90px;
+    background-color: #343434;
+    padding: 20px;
+}
+.footer-enquiry:hover,
+.footer-examination:hover {
+border: solid 1px #2aaaff;
+background-color: #101010;
+
+}
+.footer-enquiry h4,
+.footer-examination h4 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+}
+
+.footer-follow-us {
+    text-align: center; /* Center align the content */
+}
+.footer-follow-us h4{
+    font-size: 25px;
+    margin: 2px;
+}
+.footer-follow-us ul {
+    padding: 2px;
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+.footer-follow-us ul li {
+    padding: 2px;
+    color: #818181;
+    display: inline-block; /* Display links horizontally */
+    margin-right: 10px; /* Add space between links */
+}
+.footer-follow-us ul li a{
+    color: #818181;
+    padding: 2px;
+    display: inline-block; /* Display links horizontally */
+    margin-right: 10px; /* Add space between links */
+    text-decoration: none;
+}
+.footer-follow-us ul li a:hover{
+    border: solid 1px #2aaaff;
+    padding: 2px;
+    border-radius: 2px;
+    color: #101010;
+    background-color: #ffffff;
+    
+}
+/* Footer Ends */
+
+
+
+
+
+/* Enqury Container */
+
+.outer-container {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding-right: 20px; /* Add some padding to create space between the container and the edge */
+}
+
+.container {
+    margin-right: -120px;
+    padding: 10px 20px;
+    background-color: rgb(255, 183, 0);
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* writing-mode: vertical-rl; Display text vertically from left to right */
+    text-align: center; /* Center text horizontally */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+.container p{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.container:hover {
+    margin-right: -20px;
+    background-color: rgb(255, 119, 0);
+    color: #fff;
+}

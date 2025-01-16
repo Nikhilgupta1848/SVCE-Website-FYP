@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Register.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="heading1">
+        <img src="{% static 'css/logo.jpg' %}" alt="">
+        <h1> SVCE Bengaluru </h1>
+    </div>
+
+    <div class="main">
+    <div class="container">
+        
+        <h2> REGISTER </h2>
+        <form action="" method="POST">
+            {% csrf_token %}
+        <div class="innerdiv1">
+            <!-- <label for="username"> <i class='fas fa-user-alt' style='font-size:20px'></i> Username: </label> -->
+            <input type="text" id="username" name="username" required placeholder="username">
+        </div>
+        <div class="innerdiv1">
+
+            <!-- <label for="email"> <i class="fa fa-envelope" style="font-size:20px"></i>  Email: </label> -->
+            <input type="email" id="email" name="email" required placeholder="Email" >
+        </div>
+            
+        <div class="innerdiv1">
+
+        <!-- <label for="number"><i class='fas fa-phone-square-alt' style='font-size:20px'></i> Number:  
+        </label> -->
+            <input type="text" id="Number" name="number" maxlength="10" required placeholder="Number">
+        </div>
+        <div class="innerdiv1">
+
+        <!-- <label for="password"><i class='fas fa-lock' style='font-size:20px'></i>  Password:
+        </label> -->
+            <input type="password" id="password" name="password" required placeholder="Password">
+        </div>
+            <button type="submit">Register</button>
+            <p>Already have an account? <a href="{% url 'loginpage' %}">Login here</a>.</p>
+        </form>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

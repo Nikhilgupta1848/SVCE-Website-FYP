@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+header{
+    margin: 0;
+    padding: 0;
+}
+.innerheading1{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading h1{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading img{
+    width: 80px;
+    height: 50px;
+}
+.container{
+    background-image: url(M-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #d6d6d6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.innercontainer{
+    width: 500px;
+    height: 500px;
+    /* background-color: #565656; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.login-container{
+    backdrop-filter: blur(5px);
+    background-color: #03030360;
+    width: 800px;
+    height: 550px;
+    /* border-radius: 40px; */
+    border: solid 2px #000;
+}
+.login-container:hover{
+    background-color: #1f1f1f60;
+    transition: ease-in-out 0.5s;
+}
+
+.login-container h2{
+    background-color: #08ACCA;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.login-form{
+
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form label{
+    color: #ffffff;
+    margin: 10px;
+    width: 300px;
+}
+label{
+    display: block;
+    width: 200px;
+    padding: 1px;
+    font-size: 30px;
+}
+input{
+    
+    height: 30px;
+    width: 350px;
+}
+
+.btn{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    width: 250px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #08ACCA;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    font-weight: 600;
+    color: #1e1e1e;
+    background-color: #dceeff;
+    box-shadow: 10px 10px #1f1f1f; 
+    transition: ease-in-out 0.5s;
+}
+p{
+    text-align: center;
+    color: #c6c6c6;
+    font-size: 20px;
+}
+p a{
+    color: #ffffff;
+}
+p a:hover{
+    color: #2AFFBC;
+    transition: ease-in-out 0.5s;
+}
